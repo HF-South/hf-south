@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Lua Scripts</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/themes/prism-tomorrow.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Roblox Lua Scripts</h1>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showSection('scripts')">Scripts</a></li>
+          <li><a href="#" onclick="showSection('featured')">Featured</a></li>
+          <li><a href="#" onclick="showSection('contributors')">Contributors</a></li>
+          <li><a href="#" onclick="showSection('team')">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section id="scripts" class="section active">
+      <h2>Scripts</h2>
+      <div class="script">
+        <button class="toggle-btn" onclick="toggleCode('script1')">Script 1: Example Script</button>
+        <div class="code-container" id="script1">
+          <pre class="code"><code class="language-lua"></code></pre>
+          <button class="copy-btn" onclick="copyCode('script1')">Copy Code</button>
+        </div>
+      </div>
+      <div class="script">
+        <button class="toggle-btn" onclick="toggleCode('script2')">Script 2: Another Example</button>
+        <div class="code-container" id="script2">
+          <pre class="code"><code class="language-lua"></code></pre>
+          <button class="copy-btn" onclick="copyCode('script2')">Copy Code</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="section">
+      <h2>Featured</h2>
+      <p>This section will showcase featured Lua scripts that are highly recommended for Roblox game development.</p>
+    </section>
+
+    <section id="contributors" class="section">
+      <h2>Contributors</h2>
+      <p>Special thanks to all the contributors who helped in building and improving these scripts!</p>
+    </section>
+
+    <section id="team" class="section">
+      <h2>Meet the Team</h2>
+      <p>Our team is dedicated to making high-quality Lua scripts for Roblox. Here's a bit about the people who made this project possible:</p>
+      <ul>
+        <li><strong>John Doe</strong> - Lead Developer</li>
+        <li><strong>Jane Smith</strong> - Lua Scripter</li>
+        <li><strong>Alex Johnson</strong> - UI Designer</li>
+      </ul>
+    </section>
+  </div>
+  
+  <!-- Add an audio element for the sound effect -->
+  <audio id="click-sound" preload="auto">
+    <source src="test-sound.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
